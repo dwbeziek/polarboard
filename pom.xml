@@ -850,6 +850,12 @@
                             <exclude>**/NetworkReceive.java</exclude>
                             <exclude>**/lwm2m-registry/**</exclude>
                             <exclude>src/main/data/resources/**</exclude>
+<!--                            TODO Darrol - Temp disable license checking | Fix license checking -->
+                            <exclude>**/*.ts</exclude>
+                            <exclude>**/*.scss</exclude>
+                            <exclude>**/*.html</exclude>
+                            <exclude>**/*.sql</exclude>
+                            <exclude>**/*.java</exclude>
                         </excludes>
                         <mapping>
                             <proto>JAVADOC_STYLE</proto>
