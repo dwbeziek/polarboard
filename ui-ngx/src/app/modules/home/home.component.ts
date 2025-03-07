@@ -13,6 +13,14 @@
 /// See the License for the specific language governing permissions and
 /// limitations under the License.
 ///
+/// Modifications Copyright © 2025 Cryolytix
+/// All rights reserved.
+///
+/// The modifications to this file are the confidential and proprietary
+/// information of Cryolytix. You may not disclose, reproduce, or distribute
+/// these modifications without prior written permission from Cryolytix,
+/// except as permitted by applicable law.
+///
 
 import { AfterViewInit, Component, ElementRef, Inject, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { skip, startWith, Subject } from 'rxjs';
@@ -34,6 +42,8 @@ import { RouterTabsComponent } from '@home/components/router-tabs.component';
 import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { isDefined, isDefinedAndNotNull } from '@core/utils';
+import {AdminService} from "@core/http/admin.service";
+import {BrandingSettings} from "@shared/models/settings.models";
 
 @Component({
   selector: 'tb-home',
@@ -52,7 +62,7 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
   sidenavMode: 'over' | 'push' | 'side' = 'side';
   sidenavOpened = true;
 
-  logo = 'assets/logo_cryolytix_title_white.svg';
+  logo = 'assets/branding/images/logo_cryolytix_title_white.svg';
 
   @ViewChild('sidenav')
   sidenav: MatSidenav;
@@ -73,6 +83,7 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
               @Inject(WINDOW) private window: Window,
               private activeComponentService: ActiveComponentService,
               private fb: FormBuilder,
+              private adminService: AdminService,
               public breakpointObserver: BreakpointObserver) {
     super(store);
   }
@@ -94,6 +105,9 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
             this.sidenavMode = 'over';
             this.sidenavOpened = false;
           }
+          this.adminService.getAdminSettings<BrandingSettings>('branding').subscribe((settings) => {
+            this.logo = settings.jsonValue.logoPath;
+          });
         }
       );
   }

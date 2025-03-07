@@ -13,6 +13,14 @@
 /// See the License for the specific language governing permissions and
 /// limitations under the License.
 ///
+/// Modifications Copyright © 2025 Cryolytix
+/// All rights reserved.
+///
+/// The modifications to this file are the confidential and proprietary
+/// information of Cryolytix. You may not disclose, reproduce, or distribute
+/// these modifications without prior written permission from Cryolytix,
+/// except as permitted by applicable law.
+///
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -183,6 +191,7 @@ import {
 } from '@home/components/dashboard-page/layout/select-dashboard-breakpoint.component';
 import { EntityChipsComponent } from '@home/components/entity/entity-chips.component';
 import { DashboardViewComponent } from '@home/components/dashboard-view/dashboard-view.component';
+import {BrandingSettingsComponent} from "@home/components/branding/branding-settings.component";
 
 @NgModule({
   declarations:
@@ -326,7 +335,8 @@ import { DashboardViewComponent } from '@home/components/dashboard-view/dashboar
       RateLimitsDetailsDialogComponent,
       SendNotificationButtonComponent,
       EntityChipsComponent,
-      DashboardViewComponent
+      DashboardViewComponent,
+      BrandingSettingsComponent
     ],
   imports: [
     CommonModule,
@@ -463,7 +473,8 @@ import { DashboardViewComponent } from '@home/components/dashboard-view/dashboar
     RateLimitsDetailsDialogComponent,
     SendNotificationButtonComponent,
     EntityChipsComponent,
-    DashboardViewComponent
+    DashboardViewComponent,
+    BrandingSettingsComponent
   ],
   providers: [
     WidgetComponentService,

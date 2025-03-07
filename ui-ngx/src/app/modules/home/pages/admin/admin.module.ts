@@ -13,6 +13,16 @@
 /// See the License for the specific language governing permissions and
 /// limitations under the License.
 ///
+/// Modifications Copyright © 2025 Cryolytix
+/// All rights reserved.
+///
+/// The modifications to this file are the confidential and proprietary
+/// information of Cryolytix. You may not disclose, reproduce, or distribute
+/// these modifications without prior written permission from Cryolytix,
+/// except as permitted by applicable law.
+///
+
+
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -37,6 +47,7 @@ import { OAuth2Module } from '@home/pages/admin/oauth2/oauth2.module';
 import { JsLibraryTableHeaderComponent } from '@home/pages/admin/resource/js-library-table-header.component';
 import { JsResourceComponent } from '@home/pages/admin/resource/js-resource.component';
 import { NgxFlowModule } from '@flowjs/ngx-flow';
+import { BrandingAdminSettingsComponent } from "@home/pages/admin/branding-admin-settings.component";
 
 @NgModule({
   declarations:
@@ -55,7 +66,8 @@ import { NgxFlowModule } from '@flowjs/ngx-flow';
       QueueComponent,
       RepositoryAdminSettingsComponent,
       AutoCommitAdminSettingsComponent,
-      TwoFactorAuthSettingsComponent
+      TwoFactorAuthSettingsComponent,
+      BrandingAdminSettingsComponent
     ],
   imports: [
     CommonModule,

@@ -544,8 +544,26 @@
         "slack-settings": "Slack settings",
         "mobile-settings": "Mobile settings",
         "firebase-service-account-file": "Firebase service account credentials JSON file",
-        "select-firebase-service-account-file": "Drag and drop your Firebase service account credentials file or "
-      },
+        "select-firebase-service-account-file": "Drag and drop your Firebase service account credentials file or ",
+        "branding": {
+            "branding": "Branding",
+            "branding-settings": "Branding Settings",
+            "logo-path": "Logo Path",
+            "logo-path-required": "Logo Path is required.",
+            "favicon-path": "Favicon Path",
+            "favicon-path-required": "Favicon Path is required.",
+            "primary-color": "Primary Color",
+            "primary-color-required": "Primary Color is required.",
+            "accent-color": "Accent Color",
+            "accent-color-required": "Accent Color is required.",
+            "title": "Title",
+            "title-required": "Title is required.",
+            "footer-text": "Footer Text",
+            "footer-text-required": "Footer Text is required.",
+            "login-text": "Login Text",
+            "login-text-required": "Login Text is required."
+        }
+    },
     "alarm": {
         "alarm": "Alarm",
         "alarms": "Alarms",

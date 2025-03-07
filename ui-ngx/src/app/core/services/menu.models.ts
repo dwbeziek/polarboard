@@ -13,6 +13,14 @@
 /// See the License for the specific language governing permissions and
 /// limitations under the License.
 ///
+/// Modifications Copyright © 2025 Cryolytix
+/// All rights reserved.
+///
+/// The modifications to this file are the confidential and proprietary
+/// information of Cryolytix. You may not disclose, reproduce, or distribute
+/// these modifications without prior written permission from Cryolytix,
+/// except as permitted by applicable law.
+///
 
 import { AuthState } from '@core/auth/auth.models';
 import { Authority } from '@shared/models/authority.enum';
@@ -76,6 +84,7 @@ export enum MenuId {
   home_settings = 'home_settings',
   notification_settings = 'notification_settings',
   repository_settings = 'repository_settings',
+  branding_settings = 'branding_settings',
   auto_commit_settings = 'auto_commit_settings',
   queues = 'queues',
   security_settings = 'security_settings',
@@ -388,6 +397,17 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       type: 'link',
       path: '/settings/repository',
       icon: 'manage_history'
+    }
+  ],
+  [
+    MenuId.branding_settings,
+    {
+      id: MenuId.branding_settings,
+      name: 'admin.branding.branding',
+      fullName: 'admin.branding.branding-settings',
+      type: 'link',
+      path: '/settings/branding',
+      icon: 'branding_watermark'
     }
   ],
   [
@@ -746,7 +766,8 @@ const defaultUserMenuMap = new Map<Authority, MenuReference[]>([
           {id: MenuId.general},
           {id: MenuId.mail_server},
           {id: MenuId.notification_settings},
-          {id: MenuId.queues}
+          {id: MenuId.queues},
+          {id: MenuId.branding_settings}
         ]
       },
       {
@@ -843,7 +864,8 @@ const defaultUserMenuMap = new Map<Authority, MenuReference[]>([
           {id: MenuId.home_settings},
           {id: MenuId.notification_settings},
           {id: MenuId.repository_settings},
-          {id: MenuId.auto_commit_settings}
+          {id: MenuId.auto_commit_settings},
+          {id: MenuId.branding_settings}
         ]
       },
       {
@@ -901,7 +923,7 @@ const defaultHomeSectionMap = new Map<Authority, HomeSectionReference[]>([
         name: 'admin.system-settings',
         places: [MenuId.general, MenuId.mail_server,
           MenuId.notification_settings, MenuId.security_settings, MenuId.oauth2, MenuId.domains,
-          MenuId.clients, MenuId.two_fa, MenuId.resources_library, MenuId.queues]
+          MenuId.clients, MenuId.two_fa, MenuId.resources_library, MenuId.queues, MenuId.branding_settings]
       }
     ]
   ],
@@ -946,7 +968,7 @@ const defaultHomeSectionMap = new Map<Authority, HomeSectionReference[]>([
       },
       {
         name: 'admin.system-settings',
-        places: [MenuId.home_settings, MenuId.resources_library, MenuId.repository_settings, MenuId.auto_commit_settings]
+        places: [MenuId.home_settings, MenuId.resources_library, MenuId.repository_settings, MenuId.auto_commit_settings, MenuId.branding_settings]
       }
     ]
   ],

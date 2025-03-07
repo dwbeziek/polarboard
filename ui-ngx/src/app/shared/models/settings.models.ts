@@ -13,6 +13,14 @@
 /// See the License for the specific language governing permissions and
 /// limitations under the License.
 ///
+/// Modifications Copyright © 2025 Cryolytix
+/// All rights reserved.
+///
+/// The modifications to this file are the confidential and proprietary
+/// information of Cryolytix. You may not disclose, reproduce, or distribute
+/// these modifications without prior written permission from Cryolytix,
+/// except as permitted by applicable law.
+///
 
 import { ValidatorFn } from '@angular/forms';
 import { isNotEmptyStr, isNumber } from '@core/utils';
@@ -85,6 +93,16 @@ export interface MailConfigTemplate {
 
 export interface GeneralSettings {
   baseUrl: string;
+}
+
+export interface BrandingSettings {
+  logoPath?: string;
+  faviconPath?: string;
+  primaryColor?: string;
+  accentColor?: string;
+  title?: string;
+  footerText?: string;
+  loginText?: string;
 }
 
 export type DeviceConnectivityProtocol = 'http' | 'https' | 'mqtt' | 'mqtts' | 'coap' | 'coaps';

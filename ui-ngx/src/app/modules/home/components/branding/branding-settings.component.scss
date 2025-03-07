@@ -1,0 +1,31 @@
+/**
+ * Copyright © 2025 Cryolytix
+ * All rights reserved.
+ *
+ * This software is the confidential and proprietary information of Cryolytix.
+ * You may not disclose, reproduce, or distribute this software without prior
+ * written permission from Cryolytix, except as permitted by applicable law.
+ * This software is provided "AS IS" without warranty of any kind, express or
+ * implied, including but not limited to warranties of merchantability or
+ * fitness for a particular purpose.
+ */
+:host {
+  .mat-headline-5 {
+    margin-bottom: 8px;
+  }
+
+  .mat-mdc-card-title {
+    margin: 0;
+  }
+
+  .fields-group {
+    padding: 8px 16px 0;
+    margin: 10px 0;
+    border: 1px groove rgba(0, 0, 0, .25);
+    border-radius: 4px;
+
+    legend {
+      color: rgba(0, 0, 0, .7);
+    }
+  }
+}

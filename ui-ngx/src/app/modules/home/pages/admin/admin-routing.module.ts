@@ -13,6 +13,14 @@
 /// See the License for the specific language governing permissions and
 /// limitations under the License.
 ///
+/// Modifications Copyright © 2025 Cryolytix
+/// All rights reserved.
+///
+/// The modifications to this file are the confidential and proprietary
+/// information of Cryolytix. You may not disclose, reproduce, or distribute
+/// these modifications without prior written permission from Cryolytix,
+/// except as permitted by applicable law.
+///
 
 import { inject, NgModule } from '@angular/core';
 import { ActivatedRouteSnapshot, ResolveFn, Router, RouterModule, RouterStateSnapshot, Routes } from '@angular/router';
@@ -46,6 +54,7 @@ import { ScadaSymbolData } from '@home/pages/scada-symbol/scada-symbol-editor.mo
 import { MenuId } from '@core/services/menu.models';
 import { catchError } from 'rxjs/operators';
 import { JsLibraryTableConfigResolver } from '@home/pages/admin/resource/js-library-table-config.resolver';
+import { BrandingAdminSettingsComponent } from "@home/pages/admin/branding-admin-settings.component"
 
 export const scadaSymbolResolver: ResolveFn<ScadaSymbolData> =
   (route: ActivatedRouteSnapshot,
@@ -373,7 +382,19 @@ const routes: Routes = [
       {
         path: 'sms-provider',
         redirectTo: '/settings/notifications'
-      }
+      },
+      {
+        path: 'branding',
+        component: BrandingAdminSettingsComponent,
+        canDeactivate: [ConfirmOnExitGuard],
+        data: {
+          auth: [Authority.SYS_ADMIN, Authority.TENANT_ADMIN],
+          title: 'admin.branding-settings',
+          breadcrumb: {
+            menuId: MenuId.branding_settings
+          }
+        }
+      },
     ]
   },
   {

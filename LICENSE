@@ -199,3 +199,20 @@
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
+
+   ThingsBoard Community Edition
+   Copyright © 2016-2025 The Thingsboard Authors
+   Licensed under the Apache License, Version 2.0
+
+   [Full Apache 2.0 text from https://www.apache.org/licenses/LICENSE-2.0]
+
+   Polarboard Modifications
+   Copyright © 2025 Cryolytix
+   All rights reserved.
+
+   The modifications and new code in this repository, including but not limited to
+   the branding_settings feature, are the confidential and proprietary information
+   of Cryolytix. These portions are not licensed under the Apache License 2.0 and
+   may not be reproduced, distributed, or disclosed without prior written permission
+   from Cryolytix, except as permitted by applicable law.
