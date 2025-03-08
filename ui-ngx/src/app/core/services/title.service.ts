@@ -21,6 +21,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { filter } from 'rxjs/operators';
 
 import { environment as env } from '@env/environment';
+import {AdminService} from "@core/http/admin.service";
+import {BrandingSettings} from "@shared/models/settings.models";
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +30,7 @@ import { environment as env } from '@env/environment';
 export class TitleService {
   constructor(
     private translate: TranslateService,
+    private adminService: AdminService,
     private title: Title
   ) {}
 
@@ -35,21 +38,27 @@ export class TitleService {
     snapshot: ActivatedRouteSnapshot,
     lazyTranslate?: TranslateService
   ) {
-    let lastChild = snapshot;
-    while (lastChild.children.length) {
-      lastChild = lastChild.children[0];
-    }
-    const { title } = lastChild.data;
-    const translate = lazyTranslate || this.translate;
-    if (title) {
-      translate
-        .get(title)
-        .pipe(filter(translatedTitle => translatedTitle !== title))
-        .subscribe(translatedTitle =>
-          this.title.setTitle(`${env.appTitle} | ${translatedTitle}`)
-        );
-    } else {
-      this.title.setTitle(env.appTitle);
-    }
+    this.adminService.getBrandingSettings<BrandingSettings>().subscribe((settings) => {
+      const branding = settings.jsonValue;
+      const brandTitle = branding.title || `${env.appTitle}`;
+      let lastChild = snapshot;
+      while (lastChild.children.length) {
+        lastChild = lastChild.children[0];
+      }
+      const { title } = lastChild.data;
+      const translate = lazyTranslate || this.translate;
+      if (title) {
+        translate
+          .get(title)
+          .pipe(filter(translatedTitle => translatedTitle !== title))
+          .subscribe(translatedTitle =>
+            this.title.setTitle(`${brandTitle} | ${translatedTitle}`)
+          );
+      } else {
+        this.title.setTitle(brandTitle);
+      }
+
+    });
+
   }
 }

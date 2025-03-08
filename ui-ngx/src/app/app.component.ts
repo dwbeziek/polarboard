@@ -16,7 +16,7 @@
 
 import 'hammerjs';
 
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Renderer2} from '@angular/core';
 
 import { environment as env } from '@env/environment';
 
@@ -33,6 +33,8 @@ import { svgIcons, svgIconsUrl } from '@shared/models/icon.models';
 import { ActionSettingsChangeLanguage } from '@core/settings/settings.actions';
 import { SETTINGS_KEY } from '@core/settings/settings.effects';
 import { initCustomJQueryEvents } from '@shared/models/jquery-event.models';
+import { AdminService } from "@core/http/admin.service";
+import {BrandingSettings} from "@shared/models/settings.models";
 
 @Component({
   selector: 'tb-root',
@@ -46,6 +48,8 @@ export class AppComponent implements OnInit {
               private translate: TranslateService,
               private matIconRegistry: MatIconRegistry,
               private domSanitizer: DomSanitizer,
+              private adminService: AdminService,
+              private renderer: Renderer2,
               private authService: AuthService) {
 
     console.log(`ThingsBoard Version: ${env.tbVersion}`);
@@ -110,10 +114,23 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     // TODO - Darrol to dynamically do themes
-    // TODO - Darrol to get this from the service and make it dynamic
-    const newFavicon = 'assets/branding/images/favicon-32x32.png';
-    const link: HTMLLinkElement = document.querySelector('link[rel="icon"]');
-    link.href = newFavicon;
+
+
+    this.adminService.getAdminSettings<BrandingSettings>('branding').subscribe((settings) => {
+      const branding = settings.jsonValue;
+      const favicon : HTMLLinkElement = document.querySelector('link[rel="icon"]');
+      favicon.href = branding.faviconPath;
+
+      // Colors
+      const style = this.renderer.createElement('style');
+      style.textContent = `
+                :root {
+                    --$tb-primary-color: ${branding.primaryColor || '#2196F3'};
+                    --$tb-secondary-color: ${branding.accentColor || '#FF4081'};
+                }
+            `;
+      this.renderer.appendChild(document.head, style);
+    });
 
   }
 
