@@ -23,7 +23,8 @@ import { Component } from '@angular/core';
 })
 export class LogoComponent {
 
-  logo = 'assets/logo_title_white.svg';
+  // TODO - Darrol to make this dynamic
+  logo = 'assets/branding/images/logo_cryolytix_title_white.svg';
 
   gotoThingsboard(): void {
     window.open('https://thingsboard.io', '_blank');

@@ -109,6 +109,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    // TODO - Darrol to dynamically do themes
+    // TODO - Darrol to get this from the service and make it dynamic
+    const newFavicon = 'assets/branding/images/favicon-32x32.png';
+    const link: HTMLLinkElement = document.querySelector('link[rel="icon"]');
+    link.href = newFavicon;
+
   }
 
   onActivateComponent($event: any) {
