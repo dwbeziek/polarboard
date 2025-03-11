@@ -185,7 +185,7 @@ label {
     }
 
     &.tb-error {
-      color: rgb(221, 44, 0);
+      color: rgb(197, 0, 26);
 
       &.tb-required::after {
         color: rgb(221, 44, 0);
@@ -1290,12 +1290,18 @@ pre.tb-highlight {
   }
 }
 
-// Ensure static Sass doesn’t override dynamic vars
-.dark-theme {
-  // Fallback for non-overridden elements
-  background-color: var(--tb-background);
-  color: var(--tb-text);
+html, body {
+  font-family: 'Poppins', sans-serif !important;
+  margin: 0;
+  padding: 0;
 }
+
+// Override Material and ThingsBoard defaults
+[class*="mat-"], [class*="tb-"], .widget-container, .tb-widget,
+.mat-button, .mat-card, .mat-table, .mat-list-item, .mat-form-field {
+  font-family: 'Poppins', sans-serif !important;
+}
+
 
 /***************
  * TAILWIND CSS

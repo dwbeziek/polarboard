@@ -225,6 +225,7 @@ import { IntervalOptionsConfigPanelComponent } from '@shared/components/time/int
 import { GroupingIntervalOptionsComponent } from '@shared/components/time/aggregation/grouping-interval-options.component';
 import { JsFuncModulesComponent } from '@shared/components/js-func-modules.component';
 import { JsFuncModuleRowComponent } from '@shared/components/js-func-module-row.component';
+import { ThemeService } from "@core/services/theme.service";
 
 export function MarkedOptionsFactory(markedOptionsService: MarkedOptionsService) {
   return markedOptionsService;
@@ -232,6 +233,7 @@ export function MarkedOptionsFactory(markedOptionsService: MarkedOptionsService)
 
 @NgModule({
   providers: [
+    ThemeService,
     DatePipe,
     MillisecondsToTimeStringPipe,
     EnumToArrayPipe,

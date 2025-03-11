@@ -7,46 +7,44 @@ export class ThemeService {
   constructor() {
     this.styleSheet = document.createElement('style');
     document.head.appendChild(this.styleSheet);
+    this.loadTheme();
   }
 
-  setTheme(primary: string, secondary: string, mode: 'light' | 'dark') {
+  setTheme(primary: string, secondary: string) {
     const css = `
       :root {
-        --tb-primary: ${primary};
-        --tb-accent: ${secondary};
-        --tb-background: ${mode === 'light' ? '#fafafa' : '#303030'};
-        --tb-text: ${mode === 'light' ? '#212121' : '#ffffff'};
-        --tb-surface: ${mode === 'light' ? '#ffffff' : '#424242'};
+        --tb-primary-color: ${primary};
+        --tb-secondary-color: ${secondary};
+        --tb-warn-color: #ff5722; // Override orange
       }
-      body, .tb-container {
-        background-color: var(--tb-background);
-        color: var(--tb-text);
+      .mat-toolbar, .mat-sidenav,
+      .mat-button.mat-primary, .mat-raised-button.mat-primary,
+      .mat-icon-button.mat-primary {
+        background-color: var(--tb-primary-color) !important;
+        color: #ffffff !important;
       }
-      .mat-primary, .mat-button.mat-primary {
-        background-color: ${primary} !important;
-        color: ${mode === 'light' ? '#fff' : '#fff'};
+      .mat-button.mat-accent, .mat-raised-button.mat-accent,
+      .mat-icon-button.mat-accent {
+        background-color: var(--tb-accent-color) !important;
+        color: #ffffff !important;
       }
-      .mat-accent, .mat-button.mat-accent {
-        background-color: ${secondary} !important;
-        color: ${mode === 'light' ? '#fff' : '#fff'};
-      }
-      .mat-card, .mat-dialog-container {
-        background-color: var(--tb-surface);
-        color: var(--tb-text);
+      .mat-button.mat-warn, .mat-raised-button.mat-warn,
+      .mat-icon-button.mat-warn {
+        background-color: var(--tb-warn-color) !important;
+        color: #ffffff !important;
       }
     `;
     this.styleSheet.textContent = css;
-    document.body.classList.toggle('dark-theme', mode === 'dark');
-    localStorage.setItem('theme', JSON.stringify({ primary, secondary, mode }));
+    localStorage.setItem('theme', JSON.stringify({ primary, secondary }));
   }
 
   loadTheme() {
     const saved = localStorage.getItem('theme');
     if (saved) {
-      const { primary, secondary, mode } = JSON.parse(saved);
-      this.setTheme(primary || '#3f51b5', secondary || '#ff4081', mode || 'light');
+      const { primary, secondary } = JSON.parse(saved);
+      this.setTheme(primary || '#3f51b5', secondary || '#ff4081');
     } else {
-      this.setTheme('#3f51b5', '#ff4081', 'light'); // Default
+      this.setTheme('#3f51b5', '#ff4081');
     }
   }
 }
