@@ -1292,24 +1292,27 @@ pre.tb-highlight {
 
 html, body {
   font-family: 'Poppins', sans-serif !important;
-  font-weight: 400; // Lighter default (was 500/600 in some spots)
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
 
-[class*="mat-"]:not(.material-icons):not(.mat-icon):not([class*="fa-"]),
-[class*="tb-"]:not(.material-icons):not(.mat-icon):not([class*="fa-"]),
+// Apply Poppins, exclude all icons
+[class*="mat-"]:not(.material-icons):not(.mat-icon):not([class*="fa"]),
+[class*="tb-"]:not(.material-icons):not(.mat-icon):not([class*="fa"]),
 .widget-container, .tb-widget,
 .mat-button, .mat-card, .mat-table, .mat-list-item, .mat-form-field {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 400 !important;
 }
 
+// Icon fonts
 .material-icons, .mat-icon {
   font-family: 'Material Icons' !important;
 }
-[class*="fa-"], .fa, .fas, .far, .fal, .fab {
-  font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands', sans-serif !important;
+.fa, [class*="fa-"] {
+  font-family: 'FontAwesome' !important; // v4
+  /* For v6: font-family: 'Font Awesome 6 Free' !important; */
 }
 
 
