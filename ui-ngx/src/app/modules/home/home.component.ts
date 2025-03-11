@@ -105,9 +105,9 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
             this.sidenavMode = 'over';
             this.sidenavOpened = false;
           }
-          this.adminService.getAdminSettings<BrandingSettings>('branding').subscribe((settings) => {
-            this.logo = settings.jsonValue.logoPath;
-          });
+          // this.adminService.getAdminSettings<BrandingSettings>('branding').subscribe((settings) => {
+          //   this.logo = settings.jsonValue.logoPath;
+          // });
         }
       );
   }

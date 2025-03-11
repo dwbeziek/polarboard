@@ -116,21 +116,21 @@ export class AppComponent implements OnInit {
     // TODO - Darrol to dynamically do themes
 
 
-    this.adminService.getAdminSettings<BrandingSettings>('branding').subscribe((settings) => {
-      const branding = settings.jsonValue;
-      const favicon : HTMLLinkElement = document.querySelector('link[rel="icon"]');
-      favicon.href = branding.faviconPath;
-
-      // Colors
-      const style = this.renderer.createElement('style');
-      style.textContent = `
-                :root {
-                    --$tb-primary-color: ${branding.primaryColor || '#2196F3'};
-                    --$tb-secondary-color: ${branding.accentColor || '#FF4081'};
-                }
-            `;
-      this.renderer.appendChild(document.head, style);
-    });
+    // this.adminService.getAdminSettings<BrandingSettings>('branding').subscribe((settings) => {
+    //   const branding = settings.jsonValue;
+    //   const favicon : HTMLLinkElement = document.querySelector('link[rel="icon"]');
+    //   favicon.href = branding.faviconPath;
+    //
+    //   // Colors
+    //   const style = this.renderer.createElement('style');
+    //   style.textContent = `
+    //             :root {
+    //                 --$tb-primary-color: ${branding.primaryColor || '#2196F3'};
+    //                 --$tb-secondary-color: ${branding.accentColor || '#FF4081'};
+    //             }
+    //         `;
+    //   this.renderer.appendChild(document.head, style);
+    // });
 
   }
 

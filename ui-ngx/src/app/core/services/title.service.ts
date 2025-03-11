@@ -38,9 +38,10 @@ export class TitleService {
     snapshot: ActivatedRouteSnapshot,
     lazyTranslate?: TranslateService
   ) {
-    this.adminService.getBrandingSettings<BrandingSettings>().subscribe((settings) => {
-      const branding = settings.jsonValue;
-      const brandTitle = branding.title || `${env.appTitle}`;
+    // this.adminService.getBrandingSettings<BrandingSettings>().subscribe((settings) => {
+      // const branding = settings.jsonValue;
+      // const brandTitle = branding.title || `${env.appTitle}`;
+      const brandTitle = `${env.appTitle}`;
       let lastChild = snapshot;
       while (lastChild.children.length) {
         lastChild = lastChild.children[0];
@@ -58,7 +59,7 @@ export class TitleService {
         this.title.setTitle(brandTitle);
       }
 
-    });
+    // });
 
   }
 }
