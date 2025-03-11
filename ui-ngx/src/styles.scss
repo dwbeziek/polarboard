@@ -1312,26 +1312,6 @@ html, body {
   font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands', sans-serif !important;
 }
 
-// More padding for airiness
-.mat-toolbar {
-  padding: 0 24px; // Was 16px
-}
-.mat-sidenav {
-  padding: 24px 0; // Was 16px 0
-}
-.mat-sidenav-content, .tb-container {
-  padding: 24px; // Was 16px
-}
-.mat-card, .mat-dialog-container, .mat-menu-panel, .mat-expansion-panel {
-  padding: 24px; // Was 16px
-  margin: 24px; // Was 16px
-}
-.mat-button, .mat-raised-button, .mat-icon-button {
-  padding: 0 20px; // Was 0 16px
-}
-.mat-list-item {
-  padding: 0 24px; // Was 0 16px
-}
 
 
 /***************
