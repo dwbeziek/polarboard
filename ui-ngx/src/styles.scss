@@ -1297,7 +1297,6 @@ html, body {
   padding: 0;
 }
 
-// Apply Poppins, exclude all icons
 [class*="mat-"]:not(.material-icons):not(.mat-icon):not([class*="fa"]),
 [class*="tb-"]:not(.material-icons):not(.mat-icon):not([class*="fa"]),
 .widget-container, .tb-widget,
@@ -1306,7 +1305,6 @@ html, body {
   font-weight: 400 !important;
 }
 
-// Icon fonts
 .material-icons, .mat-icon {
   font-family: 'Material Icons' !important;
 }
