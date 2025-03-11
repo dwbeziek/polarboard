@@ -25,6 +25,7 @@ import { MenuToggleComponent } from '@modules/home/menu/menu-toggle.component';
 import { SideMenuComponent } from '@modules/home/menu/side-menu.component';
 import { NotificationBellComponent } from '@home/components/notification/notification-bell.component';
 import { ShowNotificationPopoverComponent } from '@home/components/notification/show-notification-popover.component';
+import { ThemeSwitcherComponent} from "@home/components/theme-switcher/theme-switcher.component";
 
 @NgModule({
   declarations:
@@ -34,7 +35,8 @@ import { ShowNotificationPopoverComponent } from '@home/components/notification/
       MenuToggleComponent,
       SideMenuComponent,
       NotificationBellComponent,
-      ShowNotificationPopoverComponent
+      ShowNotificationPopoverComponent,
+      ThemeSwitcherComponent
     ],
   imports: [
     CommonModule,

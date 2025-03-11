@@ -1,0 +1,11 @@
+<mat-form-field>
+  <mat-label>Primary Color</mat-label>
+  <input matInput type="color" #primary (change)="applyTheme(primary.value, secondary.value)">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Secondary Color</mat-label>
+  <input matInput type="color" #secondary (change)="applyTheme(primary.value, secondary.value)">
+</mat-form-field>
+<button mat-button (click)="toggleMode()">
+  {{ mode === 'light' ? 'Dark Mode' : 'Light Mode' }}
+</button>

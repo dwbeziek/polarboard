@@ -1290,6 +1290,13 @@ pre.tb-highlight {
   }
 }
 
+// Ensure static Sass doesn’t override dynamic vars
+.dark-theme {
+  // Fallback for non-overridden elements
+  background-color: var(--tb-background);
+  color: var(--tb-text);
+}
+
 /***************
  * TAILWIND CSS
  ***************/
