@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../../../scss/constants';
+@import '../../../../theme';
 
 :host {
   width: 100%;
@@ -61,7 +61,7 @@
 
   tb-dashboard {
     .tb-dashboard-content {
-      background-color: $primary-hue-3 !important;
+      background-color: map-get($tb-primary, 300) !important;
     }
   }
 }

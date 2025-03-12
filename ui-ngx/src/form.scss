@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 @import './scss/constants';
+@import './theme';
 
 @mixin form-row-column() {
   flex-direction: column;
@@ -684,7 +685,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: $tb-primary-color;
+      background: $primary;
       mask-image: url(/assets/home/no_data_folder_bg.svg);
       -webkit-mask-image: url(/assets/home/no_data_folder_bg.svg);
       mask-repeat: no-repeat;
@@ -720,7 +721,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: $tb-primary-color;
+      background: $primary;
       opacity: 0.04;
       pointer-events: none;
     }

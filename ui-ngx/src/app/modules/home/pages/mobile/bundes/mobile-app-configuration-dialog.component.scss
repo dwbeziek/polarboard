@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 @import "./../scss/constants";
+@import './../theme';
 :host {
   height: 100%;
   max-height: 100vh;
@@ -38,7 +39,7 @@
           margin: 0;
           font-size: 14px;
           background: #F3F6FA;
-          border-color: $tb-primary-color;
+          border-color: $primary;
           padding-right: 38px;
           overflow: hidden;
           overflow-x: auto;
@@ -55,7 +56,7 @@
       button.clipboard-btn, button.clipboard-btn.multiline {
         right: -2px;
         p {
-          color: $tb-primary-color;
+          color: $primary;
         }
         p, div {
           background-color: #F3F6FA;
@@ -70,7 +71,7 @@
             display: block;
             width: 18px;
             height: 18px;
-            background: $tb-primary-color;
+            background: $primary;
             mask-image: url(/assets/copy-code-icon.svg);
             -webkit-mask-image: url(/assets/copy-code-icon.svg);
             mask-repeat: no-repeat;

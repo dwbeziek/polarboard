@@ -125,7 +125,7 @@ export class AppComponent implements OnInit {
     //   const style = this.renderer.createElement('style');
     //   style.textContent = `
     //             :root {
-    //                 --$tb-primary-color: ${branding.primaryColor || '#2196F3'};
+    //                 --$primary: ${branding.primaryColor || '#2196F3'};
     //                 --$tb-secondary-color: ${branding.accentColor || '#FF4081'};
     //             }
     //         `;

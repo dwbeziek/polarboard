@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 @import "../../../../scss/constants";
+@import "../../../../theme";
 
 :host {
   width: 100%;
@@ -29,11 +30,11 @@
       mat-icon {
         margin-right: 0;
         margin-left: 16px;
-        color: $tb-primary-color;
+        color: $primary;
       }
 
       .mdc-list-item__primary-text {
-        color: $tb-primary-color;
+        color: $primary;
       }
     }
   }

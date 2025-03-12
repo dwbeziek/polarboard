@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 @import "../scss/constants";
+@import "../theme";
 @import '../scss/mixins';
+
 
 .tb-mobile-page-item-row-component-container {
   display: flex;
@@ -74,10 +76,10 @@
     input.mdc-text-field__input {
       cursor: default;
       &::placeholder {
-        color: $tb-primary-color;
+        color: $primary;
       }
       &:-ms-input-placeholder {
-        color: $tb-primary-color;
+        color: $primary;
       }
     }
   }

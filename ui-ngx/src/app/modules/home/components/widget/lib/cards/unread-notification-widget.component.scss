@@ -15,9 +15,10 @@
  */
 
 @import "../../../../../../../scss/constants";
+@import "../../../../../../../theme";
 
 .tb-no-notification-svg-color {
-  color: $tb-primary-color;
+  color: $primary;
 }
 
 .tb-unread-notification-panel {

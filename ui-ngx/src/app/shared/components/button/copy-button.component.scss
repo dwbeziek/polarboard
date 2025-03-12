@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import "../../../../scss/constants";
+@import '../../../../theme';
 
 :host {
   .mini-button {
@@ -25,11 +25,11 @@
   }
 
   .mat-icon.copied{
-    color: #00C851 !important;
+    color: $accent !important;
   }
   &:hover{
     .mat-icon{
-      color: $tb-primary-color !important;
+      color: $primary !important;
     }
   }
 }

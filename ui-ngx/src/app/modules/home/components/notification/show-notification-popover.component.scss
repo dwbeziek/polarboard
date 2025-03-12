@@ -14,7 +14,8 @@
  * limitations under the License.
  */
 @import '../../../../../scss/constants';
+@import "../../../../../theme";
 
 .tb-no-notification-svg-color {
-  color: $tb-primary-color;
+  color: $primary;
 }
