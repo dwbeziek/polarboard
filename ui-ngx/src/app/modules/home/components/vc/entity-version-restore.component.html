@@ -23,7 +23,7 @@
   <mat-progress-bar color="accent" style="z-index: 10; width: 100%; margin-bottom: -4px;" mode="indeterminate"
                     *ngIf="entityDataInfo && (isLoading$ | async)">
   </mat-progress-bar>
-  <mat-spinner *ngIf="!entityDataInfo" mode="indeterminate" diameter="80"></mat-spinner>
+  <mat-spinner color="accent"  *ngIf="!entityDataInfo" mode="indeterminate" diameter="80"></mat-spinner>
   <form *ngIf="entityDataInfo" [formGroup]="restoreFormGroup" style="padding-top: 16px;">
     <fieldset [disabled]="isLoading$ | async">
       <div class="flex flex-1 flex-col">
