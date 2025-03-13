@@ -58,7 +58,7 @@
     <div style="width: 58px;"></div>
     <div class="version-title flex-1">{{ versionIdContent() }}</div>
   </div>
-  <mat-spinner *ngIf="!contentReady" mode="indeterminate" diameter="80"></mat-spinner>
+  <mat-spinner color="accent" *ngIf="!contentReady" mode="indeterminate" diameter="80"></mat-spinner>
   <div [class.!hidden]="!contentReady" class="diff-viewer flex-1" #diffViewer></div>
   <div class="bottom-panel flex items-center justify-end gap-2" *ngIf="contentReady">
     <button mat-button color="primary"

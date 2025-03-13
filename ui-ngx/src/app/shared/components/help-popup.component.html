@@ -29,7 +29,7 @@
             type="button">
       <tb-icon matButtonIcon>{{popoverVisible ? helpOpenedIcon : helpIcon}}</tb-icon>
       <div *ngIf="popoverVisible && !popoverReady" class="tb-help-popup-button-loading absolute inset-0 flex items-center justify-center">
-        <mat-spinner mode="indeterminate" diameter="20" strokeWidth="2"></mat-spinner>
+        <mat-spinner color="accent"  mode="indeterminate" diameter="20" strokeWidth="2"></mat-spinner>
       </div>
     </button>
   </div>

@@ -76,9 +76,9 @@ body {
 
 a:not(.mat-mdc-button-base, .mdc-tab) {
   font-weight: 400;
-  color: #106cc8;
+  color: $accent;
   text-decoration: none;
-  border-bottom: 1px solid rgba(64, 84, 178, .25);
+  border-bottom: 1px solid $accent;
 
   transition: border-bottom .35s;
 }
@@ -86,7 +86,8 @@ a:not(.mat-mdc-button-base, .mdc-tab) {
 a:hover,
 a:focus {
   &:not(.mat-mdc-button-base, .mdc-tab) {
-    border-bottom: 1px solid #4054b2;
+    color: rgba($accent, .5);
+    border-bottom: 1px solid rgba($accent, .5);
   }
 }
 
@@ -185,7 +186,7 @@ label {
     }
 
     &.tb-error {
-      color: rgb(197, 0, 26);
+      color: rgb(221, 44, 0);
 
       &.tb-required::after {
         color: rgb(221, 44, 0);
@@ -332,7 +333,7 @@ pre.tb-highlight {
   .mdc-tooltip__surface {
     background-color: #fff2f3;
     box-shadow: -2px 2px 4px 0px rgba(0,0,0,0.2);
-    color: rgba(209, 39, 48, 1);
+    color: rgb(221, 44, 0);
   }
 }
 

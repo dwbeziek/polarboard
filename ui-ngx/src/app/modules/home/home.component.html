@@ -76,7 +76,7 @@
 <!--        <tb-theme-switcher></tb-theme-switcher>-->
         <tb-user-menu [displayUserInfo]="!displaySearchMode()"></tb-user-menu>
       </mat-toolbar>
-      <mat-progress-bar color="warn" style="z-index: 10; margin-bottom: -4px; width: 100%;" mode="indeterminate"
+      <mat-progress-bar color="accent" style="z-index: 10; margin-bottom: -4px; width: 100%;" mode="indeterminate"
                         *ngIf="!hideLoadingBar && (isLoading$ | async)">
       </mat-progress-bar>
       <div tb-toast class="tb-main-content flex flex-1 flex-col">
