@@ -24,7 +24,7 @@
     <mat-icon class="material-icons">close</mat-icon>
   </button>
 </mat-toolbar>
-<mat-progress-bar color="warn" mode="indeterminate" *ngIf="(isLoading$ | async) && !ignoreLoading">
+<mat-progress-bar color="accent" mode="indeterminate" *ngIf="(isLoading$ | async) && !ignoreLoading">
 </mat-progress-bar>
 <div mat-dialog-content>
   <fieldset [disabled]="(isLoading$ | async) && !ignoreLoading" class="tb-form-row no-border no-padding">
