@@ -76,7 +76,7 @@ public class SeleniumRemoteWebDriverTest {
 
     @Test
     void testSeleniumConnection() {
-        driver.get("https://thingsboard.io/");
+        driver.get("https://cryolytix.com//");
         captureScreen(driver, "success");
         log.info("Check the screenshot on target/allure-results/screenshots/success/screenshot???????????????.png");
         //Thread.sleep(TimeUnit.SECONDS.toMillis(30));

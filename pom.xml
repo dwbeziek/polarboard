@@ -23,8 +23,8 @@
     <version>3.9.1</version>
     <packaging>pom</packaging>
 
-    <name>Thingsboard</name>
-    <url>https://thingsboard.io</url>
+    <name>Cryolytix</name>
+    <url>https://cryolytix.com/</url>
     <inceptionYear>2016</inceptionYear>
 
     <properties>
@@ -2308,7 +2308,7 @@
         <repository>
             <id>thingsboard-repo-deploy</id>
             <name>ThingsBoard Repo Deployment</name>
-            <url>https://repo.thingsboard.io/artifactory/libs-release-public</url>
+            <url>https://repo.cryolytix.com/artifactory/libs-release-public</url>
         </repository>
     </distributionManagement>
 

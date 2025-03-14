@@ -28,7 +28,7 @@
     <packaging>pom</packaging>
 
     <name>ThingsBoard Docker Images</name>
-    <url>https://thingsboard.io</url>
+    <url>https://cryolytix.com/</url>
     <description>ThingsBoard Docker Images</description>
 
     <properties>
