@@ -27,7 +27,7 @@
     <packaging>pom</packaging>
 
     <name>ThingsBoard Microservices</name>
-    <url>https://thingsboard.io</url>
+    <url>https://cryolytix.com/</url>
 
     <properties>
         <main.dir>${basedir}/..</main.dir>

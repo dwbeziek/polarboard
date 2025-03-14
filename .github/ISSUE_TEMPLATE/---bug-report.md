@@ -12,7 +12,7 @@ A clear and concise description of what the bug is.
 
 **Your Server Environment**
 <!-- 🔅🔅🔅🔅🔅🔅🔅 Choose one of the following or write your own 🔅🔅🔅🔅🔅🔅🔅-->
-* [Live Demo](https://demo.thingsboard.io)
+* [Live Demo](https://demo.cryolytix.com)
 * [ThingsBoard Cloud](https://thingsboard.cloud)
 * own setup
   * Deployment: monolith or microservices

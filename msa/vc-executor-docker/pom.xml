@@ -28,7 +28,7 @@
     <packaging>pom</packaging>
 
     <name>ThingsBoard Version Control Executor Microservice</name>
-    <url>https://thingsboard.io</url>
+    <url>https://cryolytix.com/</url>
     <description>ThingsBoard Version Control Executor Microservice</description>
 
     <properties>

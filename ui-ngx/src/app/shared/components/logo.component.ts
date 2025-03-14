@@ -27,7 +27,7 @@ export class LogoComponent {
   logo = 'assets/branding/images/logo_cryolytix_title_white.svg';
 
   gotoThingsboard(): void {
-    window.open('https://thingsboard.io', '_blank');
+    window.open('https://cryolytix.com/', '_blank');
   }
 
 }

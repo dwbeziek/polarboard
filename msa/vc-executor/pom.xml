@@ -28,7 +28,7 @@
     <artifactId>vc-executor</artifactId>
 
     <name>ThingsBoard Version Control Executor</name>
-    <url>https://thingsboard.io</url>
+    <url>https://cryolytix.com/</url>
     <description>Project for ThingsBoard version control microservice</description>
 
     <properties>
