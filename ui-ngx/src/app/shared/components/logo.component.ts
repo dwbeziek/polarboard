@@ -24,7 +24,7 @@ import { Component } from '@angular/core';
 export class LogoComponent {
 
   // TODO - Darrol to make this dynamic
-  logo = 'assets/branding/images/logo_cryolytix_title_white.svg';
+  logo = 'assets/logo_title_white.svg';
 
   gotoThingsboard(): void {
     window.open('https://cryolytix.com/', '_blank');
