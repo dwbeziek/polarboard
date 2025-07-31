@@ -26,7 +26,7 @@
     <artifactId>application</artifactId>
     <packaging>jar</packaging>
 
-    <name>ThingsBoard Server Application</name>
+    <name>Cryolytix Server Application</name>
     <url>https://cryolytix.com/</url>
     <description>Open-source IoT Platform - Device management, data collection, processing and visualization
     </description>

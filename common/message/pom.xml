@@ -27,7 +27,7 @@
     <artifactId>message</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard Server Common Messages</name>
+    <name>Cryolytix Server Common Messages</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

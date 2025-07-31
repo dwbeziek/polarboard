@@ -27,7 +27,7 @@
     <artifactId>lwm2m</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard LwM2M Transport Common</name>
+    <name>Cryolytix LwM2M Transport Common</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

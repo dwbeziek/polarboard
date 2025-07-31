@@ -2307,7 +2307,7 @@
     <distributionManagement>
         <repository>
             <id>thingsboard-repo-deploy</id>
-            <name>ThingsBoard Repo Deployment</name>
+            <name>Cryolytix Repo Deployment</name>
             <url>https://repo.cryolytix.com/artifactory/libs-release-public</url>
         </repository>
     </distributionManagement>

@@ -26,7 +26,7 @@
     <artifactId>common</artifactId>
     <packaging>pom</packaging>
 
-    <name>Thingsboard Server Commons</name>
+    <name>Cryolytix Server Commons</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

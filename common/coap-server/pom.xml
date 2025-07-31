@@ -29,7 +29,7 @@
     <artifactId>coap-server</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard CoAP server</name>
+    <name>Cryolytix CoAP server</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

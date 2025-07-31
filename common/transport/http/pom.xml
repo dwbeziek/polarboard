@@ -27,7 +27,7 @@
     <artifactId>http</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard HTTP Transport Common</name>
+    <name>Cryolytix HTTP Transport Common</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

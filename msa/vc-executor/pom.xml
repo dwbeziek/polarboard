@@ -27,7 +27,7 @@
     <groupId>org.thingsboard.msa</groupId>
     <artifactId>vc-executor</artifactId>
 
-    <name>ThingsBoard Version Control Executor</name>
+    <name>Cryolytix Version Control Executor</name>
     <url>https://cryolytix.com/</url>
     <description>Project for ThingsBoard version control microservice</description>
 

@@ -27,7 +27,7 @@
     <artifactId>transport</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard Transport Microservices</name>
+    <name>Cryolytix Transport Microservices</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

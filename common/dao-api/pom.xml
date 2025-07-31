@@ -27,7 +27,7 @@
     <artifactId>dao-api</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard Server Common DAO API</name>
+    <name>Cryolytix Server Common DAO API</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

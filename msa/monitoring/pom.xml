@@ -30,7 +30,7 @@
     <artifactId>monitoring</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard Monitoring Microservice</name>
+    <name>Cryolytix Monitoring Microservice</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

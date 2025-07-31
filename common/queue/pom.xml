@@ -27,7 +27,7 @@
     <artifactId>queue</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard Server Queue components</name>
+    <name>Cryolytix Server Queue components</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

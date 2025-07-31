@@ -28,7 +28,7 @@
     <artifactId>snmp</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard SNMP Transport Microservice</name>
+    <name>Cryolytix SNMP Transport Microservice</name>
     <url>https://cryolytix.com/</url>
     <description>ThingsBoard SNMP Transport Microservice</description>
 

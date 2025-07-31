@@ -27,7 +27,7 @@
     <artifactId>web-ui</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard Web UI Microservice</name>
+    <name>Cryolytix Web UI Microservice</name>
     <url>https://cryolytix.com/</url>
     <description>Service for hosting ThingsBoard Web UI</description>
 

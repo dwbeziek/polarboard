@@ -26,7 +26,7 @@
     <artifactId>rule-engine</artifactId>
     <packaging>pom</packaging>
 
-    <name>Thingsboard Extensions</name>
+    <name>Cryolytix Extensions</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

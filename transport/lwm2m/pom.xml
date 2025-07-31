@@ -27,7 +27,7 @@
     <artifactId>lwm2m</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard LwM2m Transport Service</name>
+    <name>Cryolytix LwM2m Transport Service</name>
     <url>https://cryolytix.com</url>
 
     <properties>

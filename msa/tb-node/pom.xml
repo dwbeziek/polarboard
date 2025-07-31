@@ -27,7 +27,7 @@
     <artifactId>tb-node</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard Node Microservice</name>
+    <name>Cryolytix Node Microservice</name>
     <url>https://cryolytix.com/</url>
     <description>ThingsBoard Node Microservice</description>
 

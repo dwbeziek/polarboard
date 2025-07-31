@@ -27,7 +27,7 @@
     <artifactId>mqtt</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard MQTT Transport Microservice</name>
+    <name>Cryolytix MQTT Transport Microservice</name>
     <url>https://cryolytix.com/</url>
     <description>ThingsBoard MQTT Transport Microservice</description>
 

@@ -27,7 +27,7 @@
     <artifactId>proto</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard Server Common Protobuf and gRPC structures</name>
+    <name>Cryolytix Server Common Protobuf and gRPC structures</name>
     <url>https://cryolytix.com/</url>
 
     <properties>
@@ -91,7 +91,7 @@
     <distributionManagement>
         <repository>
             <id>thingsboard-repo-deploy</id>
-            <name>ThingsBoard Repo Deployment</name>
+            <name>Cryolytix Repo Deployment</name>
             <url>https://repo.cryolytix.com/artifactory/libs-release-public</url>
         </repository>
     </distributionManagement>

@@ -27,7 +27,7 @@
     <artifactId>cache</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard Server Common Cache</name>
+    <name>Cryolytix Server Common Cache</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

@@ -29,7 +29,7 @@
     <artifactId>stats</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard Server Stats</name>
+    <name>Cryolytix Server Stats</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

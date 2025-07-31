@@ -27,7 +27,7 @@
     <artifactId>js-executor</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard JavaScript Executor Microservice</name>
+    <name>Cryolytix JavaScript Executor Microservice</name>
     <url>https://cryolytix.com/</url>
     <description>Service executing JavaScript functions in sandboxed environment</description>
 

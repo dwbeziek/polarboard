@@ -27,7 +27,7 @@
     <artifactId>tb</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard Docker Images</name>
+    <name>Cryolytix Docker Images</name>
     <url>https://cryolytix.com/</url>
     <description>ThingsBoard Docker Images</description>
 

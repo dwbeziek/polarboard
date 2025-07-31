@@ -27,7 +27,7 @@
     <artifactId>actor</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard Actor system</name>
+    <name>Cryolytix Actor system</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

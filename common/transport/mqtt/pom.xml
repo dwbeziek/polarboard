@@ -27,7 +27,7 @@
     <artifactId>mqtt</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard MQTT Transport Common</name>
+    <name>Cryolytix MQTT Transport Common</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

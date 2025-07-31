@@ -29,7 +29,7 @@
     <artifactId>snmp</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard SNMP Transport Service</name>
+    <name>Cryolytix SNMP Transport Service</name>
     <url>https://cryolytix.com</url>
 
     <properties>

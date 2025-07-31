@@ -27,7 +27,7 @@
     <artifactId>script</artifactId>
     <packaging>pom</packaging>
 
-    <name>Thingsboard Script Invoke Commons</name>
+    <name>Cryolytix Script Invoke Commons</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

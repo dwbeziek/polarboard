@@ -26,7 +26,7 @@
     </parent>
 
     <artifactId>monitoring</artifactId>
-    <name>ThingsBoard Monitoring Service</name>
+    <name>Cryolytix Monitoring Service</name>
     <packaging>jar</packaging>
 
     <properties>

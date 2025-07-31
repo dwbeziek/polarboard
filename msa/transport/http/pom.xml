@@ -27,7 +27,7 @@
     <artifactId>http</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard HTTP Transport Microservice</name>
+    <name>Cryolytix HTTP Transport Microservice</name>
     <url>https://cryolytix.com/</url>
     <description>ThingsBoard HTTP Transport Microservice</description>
 

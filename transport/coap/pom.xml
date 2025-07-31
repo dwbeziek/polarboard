@@ -27,7 +27,7 @@
     <artifactId>coap</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard CoAP Transport Service</name>
+    <name>Cryolytix CoAP Transport Service</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

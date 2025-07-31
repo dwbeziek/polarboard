@@ -27,7 +27,7 @@
     <groupId>org.thingsboard.msa</groupId>
     <artifactId>black-box-tests</artifactId>
 
-    <name>ThingsBoard Black Box Tests</name>
+    <name>Cryolytix Black Box Tests</name>
     <url>https://cryolytix.com/</url>
     <description>Project for ThingsBoard black box testing with using Docker</description>
 

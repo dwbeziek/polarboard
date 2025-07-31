@@ -27,7 +27,7 @@
     <artifactId>remote-js-client</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard Server JS Client for remote JS execution</name>
+    <name>Cryolytix Server JS Client for remote JS execution</name>
     <url>https://cryolytix.com/</url>
 
     <properties>
@@ -76,7 +76,7 @@
     <distributionManagement>
         <repository>
             <id>thingsboard-repo-deploy</id>
-            <name>ThingsBoard Repo Deployment</name>
+            <name>Cryolytix Repo Deployment</name>
             <url>https://repo.cryolytix.com/artifactory/libs-release-public</url>
         </repository>
     </distributionManagement>

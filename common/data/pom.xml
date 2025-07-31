@@ -27,7 +27,7 @@
     <artifactId>data</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard Server Common Data</name>
+    <name>Cryolytix Server Common Data</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

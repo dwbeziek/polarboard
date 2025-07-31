@@ -27,7 +27,7 @@
     <artifactId>cluster-api</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard Server Common Cluster API</name>
+    <name>Cryolytix Server Common Cluster API</name>
     <url>https://cryolytix.com/</url>
 
     <properties>

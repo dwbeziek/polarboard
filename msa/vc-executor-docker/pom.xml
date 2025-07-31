@@ -27,7 +27,7 @@
     <artifactId>vc-executor-docker</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard Version Control Executor Microservice</name>
+    <name>Cryolytix Version Control Executor Microservice</name>
     <url>https://cryolytix.com/</url>
     <description>ThingsBoard Version Control Executor Microservice</description>
 

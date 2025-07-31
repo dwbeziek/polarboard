@@ -27,7 +27,7 @@
     <artifactId>mqtt</artifactId>
     <packaging>jar</packaging>
 
-    <name>Thingsboard MQTT Transport Service</name>
+    <name>Cryolytix MQTT Transport Service</name>
     <url>https://cryolytix.com</url>
 
     <properties>

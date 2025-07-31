@@ -27,7 +27,7 @@
     <artifactId>coap</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard COAP Transport Microservice</name>
+    <name>Cryolytix COAP Transport Microservice</name>
     <url>https://cryolytix.com/</url>
     <description>ThingsBoard COAP Transport Microservice</description>
 
